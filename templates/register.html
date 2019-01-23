@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>register</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+	html,
+  body{
+    height: 100%;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  .bd-navbar{
+  	height: 55px;
+  	color: white;
+  	background-color: #563d7F;
+  }
+  .logo{
+  	    height: 100%;
+        overflow: hidden;
+        float: left;
+        width: 200px;
+        text-align: center;
+        font-size: 28px;
+        color: #FFF;
+  }
+  /*菜单栏下的空div*/
+/*  .kong{
+  	height: 50px;
+  	background-color: white;
+  }*/
+  .nav-item{
+    height: 55px;
+  	font-size: 20px;
+  }
+  .nav-link{
+  	margin: 0 30px;
+  }
+  .form-label{
+  	font: bold;
+  }
+  .bd-navbar .navbar-nav .nav-link{
+  	color: #fff;
+  }
+  .nav-item:hover{
+  	background-color:#713CBD;
+  }
+  .bd-navbar .navbar-nav .nav-link.active{
+  	/*font-weight: 600;*/
+
+  }
+  .rounded{
+  	width: 720px;
+  	overflow: hidden;
+    margin: 0 auto;
+  }
+  .headline{
+  	margin: 0 auto;
+  	text-align: center;
+  }
+  .form-control{
+  	line-height: 200%;
+  }
+  .font{
+  	font-size: 16px;
+  	font-style: bold;
+  }
+  .d-md-flex li:first-child{
+    border-right: 1px solid #fff;
+  }
+/*  .d-md-flex a:hover{
+    background-color: #713CBD;
+  }*/
+  .kong{
+    height: 15px;
+  }
+</style>
+<body>
+	<!-- 菜单栏部分 -->
+		<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+			<div class="navbar-nav-scroll">
+				<ul class="navbar-nav bd-navbar-nav flex-row">
+					<li>
+						<a class="logo">My Site</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/home">Home</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+				<li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+			</ul>
+		</header>
+		<!-- 主体部分 -->
+    <div class="kong">
+      
+    </div>
+		<div class="shadow p-3 mb-5 bg-white rounded">
+        <h1 class="headline">Sign Up</h1><br>
+        <form id="myform">
+            <div class="form-group">
+                <label for="email" class="font">Email</label>
+                <!-- <input autocomplete="email" dal-val="true" data-val-email="Not a valid email address." data-val-required="Please enter your email address." type="text" name="Email" value> -->
+                <input type="email" class="form-control" id="email" placeholder="Please enter your email"><br>
+            </div>
+<!-- 密码 -->
+            <div class="form-group">
+                <label class="font">Password</label>
+                <input id="password" name="password" class="form-control" placeholder="Please enter your password" type="password"><br>
+            </div>
+<!-- 确认密码 -->
+            <div class="form-group">
+                <label class="font">Confirm password</label>
+                <input class="form-control" id="password_again" name="password_again" placeholder="Please retype your password" type="password"><br>
+            </div>
+<!--             <div class="form-group">
+                <label class="font">Verification code</label>
+                <input class="form-control" placeholder="Please enter verification code">
+            </div> -->
+           <div class="d-flex justify-content-around">
+              <div class="btn_left"> 
+              	<button type="reset" class="btn btn-primary btn-lg btn-block" left>Reset</button></div>
+               <div class="btn_right"><button type="submit" class="btn btn-primary btn-lg btn-block" right>Create My Account</button></div>
+           </div>
+        </form>    
+    </div>
+ </div>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="https://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+<script>
+	jQuery.validator.setDefaults({
+  debug: true,
+  success: "valid"
+});
+$( "#myform" ).validate({
+  rules: {
+    password: "required",
+    password_again: {
+      equalTo: "#password"
+    }
+  }
+});
+</script>
+</body>
+</html>

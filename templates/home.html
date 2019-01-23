@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MySite</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+html,
+  body{
+    height: 100%;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  .bd-navbar{
+  	height: 55px;
+  	color: white;
+  	background-color: #563d7F;
+  }
+  .logo{
+  	    height: 100%;
+        overflow: hidden;
+        float: left;
+        width: 200px;
+        text-align: center;
+        font-size: 28px;
+        color: #FFF;
+  }
+  .nav-item{
+    height: 55px;
+  	font-size: 20px;
+  }
+  .nav-link{
+  	margin: 0 30px;
+  }
+  .form-label{
+  	font: bold;
+  }
+  .bd-navbar .navbar-nav .nav-link{
+  	color: #fff;
+  }
+  .nav-item:hover{
+  	background-color:#713CBD;
+  }
+    .d-md-flex li:first-child{
+    border-right: 1px solid #fff;
+  }
+  </style>
+<body>
+	<!-- 菜单栏部分 -->
+		<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+			<div class="navbar-nav-scroll">
+				<ul class="navbar-nav bd-navbar-nav flex-row">
+					<li>
+						<a class="logo">My Site</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/home">Home</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+				<li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+			</ul>
+		</header>
+		</body>
+</html>
