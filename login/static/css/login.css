@@ -1,0 +1,148 @@
+#grad1 {
+          height: 200px;
+          background: -webkit-linear-gradient(left, white , blue); /* Safari 5.1 - 6.0 */
+          background: -o-linear-gradient(right, white, blue); /* Opera 11.1 - 12.0 */
+          background: -moz-linear-gradient(right, white, violet); /* Firefox 3.6 - 15 */
+          background: linear-gradient(to right, white, white); /* 标准的语法（必须放在最后） */
+}
+body, ul, li{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #ccc;
+    height: 100%;
+    line-height: 1.5;
+}
+ul{
+    list-style-type: none;
+}
+
+body{
+    height: 100%;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  .bd-navbar{
+    height: 55px;
+    color: white;
+    background-color: #563d7F;
+  }
+  .logo{
+        height: 100%;
+        overflow: hidden;
+        float: left;
+        width: 200px;
+        text-align: center;
+        font-size: 32px;
+        color: #FFF;
+  }
+  .nav-item{
+    height: 55px;
+    font-size: 22px;
+  }
+  .nav-link{
+    margin: 0 30px;
+  }
+  .form-label{
+    font: bold;
+  }
+  .bd-navbar .navbar-nav .nav-link{
+    color: #fff;
+  }
+  .nav-item:hover{
+    background-color:#713CBD;
+  }
+  .d-md-flex{
+    font-size: 20px;
+  }
+  .d-md-flex li:first-child{
+      border-right: 1px solid #fff;
+  }
+  .d-md-flex li:last-child{
+    margin-right: -20px;
+  }
+
+  .form-label{
+      font: normal;
+  }
+
+  .bd-navbar .navbar-nav .nav-link a{
+      display: block;
+   
+  }
+  .bd-navbar .navbar-nav .nav-link a:hover{
+      display: block;
+      padding: 0 10px;
+      background-color:#713CBD;
+      cursor: pointer;
+  }
+  .bd-navbar .navbar-nav .nav-link.active{
+      font-weight: 600;
+  }
+  .rounded{
+      width: 720px;
+      overflow: hidden;
+    margin: 0 auto;
+  }
+  .headline{
+      margin: 0 auto;
+      text-align: center;
+  }
+
+
+
+
+.container .container2{
+height: 40px;
+width: 600px;
+/* border: 1px solid black; */
+margin-top: 20px;
+/* padding: 0px 150px 0px; */
+
+}
+
+.container .container2 .container2-1{
+    height: 80px;
+    width: 500px;
+    /* padding: 0px 50px 0px; */
+   /* border: 1px solid black; */
+   /* vertical-align: middle; */
+    float: left; 
+    /* padding: 0px; */
+    padding-left: 130px;
+    padding-top:5px;
+    padding-right:50px;
+   
+}
+
+
+.container a{
+    display: block;
+    float: left;
+    font-size:13px;
+
+}
+.container  a:hover{
+    text-decoration: none;
+}
+
+.justify-content-around{
+  margin:20px 0;
+}
+.btn-block{
+  padding: 5px 40px;
+}
+.btn_left a{
+  color: #fff;
+  font-size: 20px;
+
+}
+.btn_left a:hover{
+  text-decoration: none;
+}

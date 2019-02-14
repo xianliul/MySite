@@ -1,0 +1,71 @@
+  body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #ccc;
+  }
+  .bd-navbar{
+  	height: 55px;
+  	color: white;
+  	background-color: #563d7F;
+  }
+  .logo{
+  	    height: 100%;
+        overflow: hidden;
+        float: left;
+        width: 200px;
+        text-align: center;
+        font-size: 32px;
+        color: #FFF;
+  }
+  /*菜单栏下的空div*/
+  .kong{
+  	height: 30px;
+  	/*background-color: #ddd;*/
+  }
+  .nav-item{
+    height: 55px;
+  	font-size: 22px;
+  }
+  .nav-link{
+  	margin: 0 30px;
+  }
+  .form-label{
+  	font: bold;
+  }
+  .bd-navbar .navbar-nav .nav-link{
+  	color: #fff;
+  }
+  .nav-item:hover{
+  	background-color:#713CBD;
+  }
+  .bd-navbar .navbar-nav .nav-link.active{
+  	
+
+  }
+  .rounded{
+  	width: 650px;
+  	/*overflow: hidden;*/
+    margin: 0 auto;
+  }
+  .justify-content-around{
+    margin-bottom: 10px;
+  }
+  .headline{
+  	margin: 0 auto;
+  	text-align: center;
+  }
+  .form-control{
+  	line-height: 200%;
+  }
+  .font{
+  	font-size: 16px;
+  	font-style: bold;
+  }
+  .d-md-flex li:first-child{
+    border-right: 1px solid #fff;
+  }
+  .d-md-flex li:last-child{
+    margin-right:-20px; 
+  }
