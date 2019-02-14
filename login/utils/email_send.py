@@ -29,7 +29,7 @@ def youjian(email, send_type="register"):
     # 如果为注册类型
     if send_type == "register":
         email_title = "注册激活链接"
-        email_body = "请点击下面的链接激活你的账号:http://http://119.23.239.131:8000/active/{0}".format(code)
+        email_body = "请点击下面的链接激活你的账号:http://119.23.239.131:8000/active/{0}".format(code)
         # 发送邮件
         send_status = send_mail(email_title, email_body, EMAIL_FROM, [email])
         if send_status:
