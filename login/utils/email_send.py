@@ -28,9 +28,15 @@ def youjian(email, send_type="register"):
     email_body = ""
     # 如果为注册类型
     if send_type == "register":
-        email_title = "注册激活链接"
-        email_body = "请点击下面的链接激活你的账号:http://119.23.239.131:8000/active/{0}".format(code)
+        email_title = "Registration activation link"
+        email_body = "Please click the link below to activate your account: http://127.0.0.1:8000/active/{0}".format(code)
         # 发送邮件
+        send_status = send_mail(email_title, email_body, EMAIL_FROM, [email])
+        if send_status:
+            pass
+    elif send_type == 'forget':
+        email_title = 'Reset link'
+        email_body = 'Please click the link below to reset your password: http://127.0.0.1:8000/reset/{0}'.format(code)
         send_status = send_mail(email_title, email_body, EMAIL_FROM, [email])
         if send_status:
             pass

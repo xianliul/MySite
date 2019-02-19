@@ -25,9 +25,7 @@ SECRET_KEY = '3g0v+$2=)8k&fsd=uzmx+(%di)p6h*$ntg@20kg6k^7s!d#cig'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '119.23.239.131',
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -133,8 +131,8 @@ STATICFILES_DIRS = [
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_SSL = True
-EMAIL_HOST = 'smtp.163.com'
+EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'a201521142052@163.com'
-EMAIL_HOST_PASSWORD = 'chd12345'
-EMAIL_FROM = 'a201521142052@163.com'
+EMAIL_HOST_USER = 'jmu123@fashiondesgin.com'
+EMAIL_HOST_PASSWORD = 'Youjian.1'
+EMAIL_FROM = 'jmu123@fashiondesgin.com'
