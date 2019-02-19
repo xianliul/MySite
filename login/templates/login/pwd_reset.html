@@ -4,7 +4,7 @@
  
 <head>
   <meta charset="UTF-8">
-  <title>重置密码</title>
+  <title>Reset password</title>
  
 <style>
 .out{
@@ -19,13 +19,13 @@
  
  
   <div class="out">
-    <h1>可以重新设置一个好记的新密码啦！</h1>
+    <h1>Reset a password!</h1>
     <form method="post" action="{% url 'modify' %}">
-      <P><span>新密码：</span><input type="password" name="newpwd1" placeholder="至少6位"></P>
-      <P><span>确认新密码：</span><input type="password" name="newpwd2" placeholder="至少6位"></P>
+      <P><span>New password：</span><input type="password" name="newpwd1" placeholder="At least 6."></P>
+      <P><span>Confirm password：</span><input type="password" name="newpwd2" placeholder="At least 6."></P>
       {% csrf_token %}
       <input type="hidden" name="email" value="{{ email }}">
-      <p><input type="submit" value="确认"></p>
+      <p><input type="submit" value="submit"></p>
     </form>
     <h1>{{ msg }}</h1>
   </div>

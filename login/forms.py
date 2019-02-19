@@ -19,4 +19,4 @@ class ResetForm(forms.Form):
     newpwd2 = forms.CharField(required=True, min_length=6, error_messages={'required': '密码不能为空.', 'min_length': "至少6位"})
 
 class ForgetForm(forms.Form):
-    email=forms.EmailField(required=True)
+    email = forms.EmailField(required=True)
